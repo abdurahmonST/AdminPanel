@@ -1,14 +1,12 @@
-import Sidebar from '../Sidebar'
+import Sidebar from "../Sidebar";
 
 const MainLayout = (props) => {
   return (
-    <div className='flex'>
+    <div className="flex h-full">
       <Sidebar />
-      <div className='pl-90 w-screen'>
-        {props.children}
-      </div>
+      <div className="pl-90 w-screen h-full">{props.children}</div>
     </div>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;
